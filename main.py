@@ -22,3 +22,9 @@ for d in data:
       break # A row can match multiple filters, only match once.
 
 print(results)
+
+from openpyxl import Workbook
+wb = Workbook()
+
+# grab the active worksheet
+ws = wb.active
